@@ -1,6 +1,6 @@
 # Reddit-Finance LLM Fine-Tuning & RAG Pipeline
 
-This project fine-tunes the Llama-2-7b LLM using question-answer (QA) pairs scraped from Reddit finance communities, and supports Retrieval-Augmented Generation (RAG).
+This project fine-tunes the Llama-2-7b LLM using question-answer (QA) pairs scraped from Reddit finance communities, and supports Retrieval-Augmented Generation (RAG). Fine-tuned LoRA model available [here](https://huggingface.co/egupta/llama-7b-2-finetuned-finance) for running inference code. Additional data required (faiss indices etc.) can be found [here](https://huggingface.co/datasets/egupta/reddit-finance-qa-json)
 
 ---
 
