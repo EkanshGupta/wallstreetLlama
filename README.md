@@ -47,7 +47,7 @@ A csv comparison file comparing base llama with fine-tuned llama can be viewed [
 3. Format prompt: retrieved QAs + query.
 4. Generate answer using fine-tuned LLaMA or using RAG.
 
-A file showing a sample RAG example for a query can be viewed [here](./simpleRAGexample.log)
+A file showing a sample RAG example for a query can be viewed [here](./sampleRAGexample.log)
 
 ---
 
