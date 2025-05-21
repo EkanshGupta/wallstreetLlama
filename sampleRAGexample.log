@@ -1,0 +1,58 @@
+Sample RAG inference example
+
+The prompt given to the LLM was:
+
+
+###########################################################
+You are a helpful assistant.
+    
+    Use the following Reddit answers to help answer the user's question.
+    
+    Q: Basic for portfolio research?
+Newbie here trying to find the good practices on researching before starting to invest
+A: Follow the science….and I’ll fill you in; there is no magic screen that will find you winners.  The market is smarter than you or any Wall Street shop
+
+Own as much as possible then get out of the way; we are our worst enemies
+
+https://www.physicianonfire.com/read-250-investing-books-recommends-three-funds/
+
+Q: Beginner
+I just started investing last weekend, I’m really not sure what I’m doing. I’m pretty financially illiterate and have 0 knowledge in the arena, I just feel like I’m doing everything wrong so I wanna know what everyone’s advice is. Also if anyone knows some good resources to keep learning that would also be appreciated!
+A: Another thing in general to keep in mind is current markets might be a bit crazy. I don’t mean that to say you should do anything specific. Just be mindful there are ups and downs. Sometimes quite large ups and downs. But over the course of time, things tend to grow. So if you’re investing, remember not to be too rash, and be patient! This is a long run game
+
+Q: How to start?
+I want to start investing. I don’t know anything about the market or the system. Are there any recommendable apps or how did you learn what to do?
+A: Step one is to figure out your goals.
+
+Q: New to investing
+Hi I’m 20 years old and have decided to start learning about investing. Any tips or advice you could give me to get my feet off the ground would be greatly appreciated.
+A: Here is what worked well for me.
+1. List down the products that you really love (e.g chipotle, PlayStation, IPhone) and figure out the companies that make them.
+2. Check the fundamentals of those companies - atleast the basics like Profitability, growth, cash in hand, returns over a period of time, earning target hits and misses, dividends yielding or not. 
+3. Start investing in the companies that pass the sanity check above.
+This strategy is typically for long term of atleast 5 year.
+BTW - I have built a tool for beginners to sanity check the stocks www.stockbruh.com . Check it out Incase you are interested.
+
+Q: How’s my roth ira
+Im 21M and started my roth ira pretty early. I can still invest about $3000 for this year before maxing the contribution. How is my portfolio, I’m open to making any changes to maximize my portfolio. I’m thinking of a more aggressive approach since I am still young but I’m open to suggestions as I want set myself up for success. What else should I invest in/what should I stop investing in?
+A: if you want single stocks keep it under 10% of total portfolio
+    
+    Question: For a beginner, how do I invest to maximize and optimize my portfolio?
+    Answer:
+###########################################################
+
+The answer given by the LLM is:
+###########################################################
+
+    1. Follow the science.
+    2. Own as much as possible.
+    3. Be patient.
+    4. Start with the basics, like chipotle or PlayStation, and research the companies that make them.
+    5. Check the fundamentals, like profitability, growth, and cash flow.
+    6. Start investing in companies that pass the sanity check.
+    7. Keep single stocks under 10% of your total portfolio.
+    8. Be mindful of market ups and downs.
+    9. Be patient and have a long-term perspective.
+    10. Consider using a tool like StockBruh to help with your research.
+###########################################################
+
