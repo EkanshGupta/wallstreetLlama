@@ -1,6 +1,10 @@
 # Reddit-Finance LLM Fine-Tuning & RAG Pipeline
 
-This project fine-tunes the Llama-2-7b LLM using question-answer (QA) pairs scraped from Reddit finance communities, and supports Retrieval-Augmented Generation (RAG). Fine-tuned LoRA model available [here](https://huggingface.co/egupta/llama-7b-2-finetuned-finance) for running inference code. Additional data required (faiss indices etc.) can be found [here](https://huggingface.co/datasets/egupta/reddit-finance-qa-json)
+This project fine-tunes the Llama-2-7b LLM using question-answer (QA) pairs scraped from Reddit finance communities, and supports Retrieval-Augmented Generation (RAG). Fine-tuned LoRA model available [here](https://huggingface.co/egupta/llama-7b-2-finetuned-finance) for running inference code. Additional data required (faiss indices etc.) can be found [here](https://huggingface.co/datasets/egupta/reddit-finance-qa-json). The fine-tuned LoRA files should be put in a specific directory (check [globals.py](./globals.py) for this info.
+
+```python
+finetuned_path = "./lora_finetuned_llama2/checkpoint-3130/"
+```
 
 ---
 
@@ -15,7 +19,7 @@ Subreddits scraped include:
 - r/cryptocurrency
 - (Total of 13 listed in `stats.log`)
 
-Collected QAs are stored in `reddit_finance_qa.jsonl` files.
+Collected QAs are stored in `reddit_finance_qa.jsonl` file (download the file from [here](https://huggingface.co/datasets/egupta/reddit-finance-qa-json))
 
 
 ### Fine-Tuning with LoRA + 4-bit Quantization
@@ -36,7 +40,7 @@ A csv comparison file comparing base llama with fine-tuned llama can be viewed [
 
 ## Retrieval-Augmented Generation (RAG)
 
-### Embedding & Indexing
+### Embedding & Indexing ((download the required LoRA files from [here](https://huggingface.co/datasets/egupta/reddit-finance-qa-json) and paste them into the required directories mentioned below)
 - Uses `sentence-transformers/all-MiniLM-L6-v2` to embed QAs.
 - Embeddings stored in FAISS index: `faiss_index/index.faiss`
 - Corresponding QA text saved in: `faiss_index/qa_corpus.pkl`
